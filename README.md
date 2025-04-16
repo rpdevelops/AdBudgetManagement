@@ -76,26 +76,6 @@ Main Logic:
 
 ---
 
-## Example Usage (main.py)
-
-```python
-from core.models import Brand, Campaign
-from core.schedule import DaypartingSchedule
-from core.system import AdSystem
-
-# Setup
-ad_system = AdSystem()
-nike = Brand(1, "Nike", daily_budget=100.0, monthly_budget=3000.0)
-ad_system.add_brand(nike)
-
-schedule = DaypartingSchedule(8, 18)
-ad_system.add_campaign(Campaign(1, nike.id, "Nike Campaign", schedule))
-ad_system.update_campaign_spend(1, 120.0)
-ad_system.print_status()
-```
-
----
-
 ## Assumptions
 
 - All campaign and brand data are in-memory (no DB layer)
