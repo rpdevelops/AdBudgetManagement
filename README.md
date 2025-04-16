@@ -33,7 +33,7 @@ ad_system/
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url> && cd ad_system
+git clone https://github.com/rpdevelops/AdBudgetManagement.git && cd AdBudgetManagement
 ```
 
 2. Setup the environment:
